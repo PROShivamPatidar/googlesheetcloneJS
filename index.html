@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>google sheet</title>
+    <link rel="stylesheet" href="./stlye.css" />
+    <link rel="stylesheet" href="./options.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="options">
+      <form class="form">
+        <select name="fontFamily" class="input">
+          <option value="Poppins-Regular">Poppins-Regular</option>
+          <option value="Poppins-Bold">Poppins-Bold</option>
+          <option value="Poppins-italic">Poppins-italic</option>
+          <option value="Poppins-Medium">Poppins-Medium</option>
+        </select>
+        <input class="input"type="number" name="fontSize" min="8" max="32" value="16" />
+        <div>
+          <input type="checkbox" id="bold" name="isBold" />
+          <label for="bold" class="material-icons">format_bold</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="italic" name="isItalic" />
+          <label for="italic" class="material-icons">format_italic</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="underline" name="isUnderline" />
+          <label for="underline" class="material-icons">format_underlined</label>
+        </div>
+
+        <div>
+          <input type="radio" name="align" value="left" id="left" checked />
+          <label for="left" class="material-icons">format_align_left</label>
+
+          <input type="radio" name="align" value="center" id="center" />
+          <label for="center" class="material-icons">format_align_center</label>
+
+          <input type="radio" name="align" value="right" id="right" />
+          <label for="right" class="material-icons">format_align_right</label>
+        </div>
+
+        <div>
+          <input type="color" name="textColor" id="textcolor" />
+          <label for="textcolor" class="material-icons">format_color_text</label>
+        </div>
+        <div>
+          <input type="color"  value="#FFFFFF" name="bgColor" id="bgcolor" />
+          <label for="bgcolor" class="material-icons">format_color_fill</label>
+        </div>
+        <span onclick="exportData()" id="export" class="material-icons">cloud_upload</span>
+        <button id="uploadButton" onclick="triggerFileInput()">
+          <i class="material-icons">cloud_download</i>
+          <input type="file" id="fileInput">
+      </button>
+      </form>
+    </div>
+
+<div id="cell-state">
+  <div id="active-cell">Null</div>
+  <input type="text" placeholder="f ( X )">
+</div>
+
+    <div id="root">
+      <div id="header">
+        <div class="head-cell first">S.No</div>
+      </div>
+      <div id="body">
+        <div id="sno"></div>
+        <div id="cells-container"></div>
+      </div>
+    </div>
+    <script src="./functionality.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

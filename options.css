@@ -1,0 +1,67 @@
+
+.form{
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+input:checked + label{
+    background-color: #EDF2FA;
+}
+input[type="checkbox"],input[type="radio"]{
+    display: none;
+}
+input[type="color"]{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+input[type="checkbox"]+label,input[type="radio"]+label{
+    padding:10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.input{
+    padding: 5px;
+    min-width: 100px;
+}
+.input:focus{
+    outline:none;
+}
+#cell-state{
+    display: flex;
+    gap: 20px;
+    padding: 10px 100px;
+    align-items: center;
+}
+#cell-state div{
+    background-color: #EDF2FA;
+    padding: 11px;
+    border-radius: 4px;
+}
+#cell-state input{
+    flex-grow: 1;
+    padding: 10px;
+}
+#cell-state input:focus{
+         outline: none;
+}
+@font-face{
+    font-family:Poppins-Bold;
+    src:url(./fontfamily/Poppins-Bold.ttf); 
+}
+@font-face{
+    font-family:Poppins-italic;
+    src:url(./fontfamily/Poppins-Italic.ttf); 
+}
+
+@font-face{
+    font-family:Poppins-Medium;
+    src:url(./fontfamily/Poppins-Medium.ttf); 
+}
+
+@font-face{
+    font-family:Poppins-Regular;
+    src:url(./fontfamily/Poppins-Regular.ttf); 
+}

@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  font-family: Poppins-Regular;
+ 
+}
+
+.form{
+  background-color: #f7e4f7;
+}
+#root {
+  width: 100vw;
+  height: 85vh;
+  overflow-x: scroll;
+  position: relative;
+}
+#header {
+  width: fit-content;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 120;
+  background-color: #f2f2f2;
+}
+.head-cell:first-child {
+  background-color: #f8f9fa;
+  position: sticky;
+  top: 0;
+  left: 0;
+  min-width: 40px !important;
+  padding: 0 0.1px;
+}
+.head-cell {
+  /* background-color: #f8f9fa; */
+  min-width: 200px;
+  height: 30px;
+  border: 0.1px solid #c4c7c5;
+  border-top-width: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#body {
+  display: grid;
+  grid-template-columns: 42px auto;
+  width: fit-content;
+}
+#sno {
+  position: sticky;
+  left: 0;
+  z-index: 100;
+  background-color: #edebeb;
+}
+.sno-cell {
+  min-width: 40px;
+  height: 30px;
+  border: 0.01px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  display: flex;
+}
+.cell {
+  min-width: 200px;
+  border: 0.1px solid #c4c7c5;
+  height: 30px;
+}
+.cell:focus {
+  border-radius: 0px;
+  outline: 3px solid #1B72E8;
+}
+#cell-state{
+  background-color: #f7e4f7;
+}
+#export{
+  cursor: pointer;
+  font-size: 32px !important;
+}
+#fileInput {
+  display: none;
+}
+   #uploadButton {
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+#uploadButton i{
+  font-size: 32px !important;
+}
